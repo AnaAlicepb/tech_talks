@@ -1,7 +1,9 @@
+@use 'variables';
+
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url('../images/fundo.png');
+    background-image: url(../images/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -10,14 +12,14 @@
         position: relative;
     }
 
-    &::before{
+    &::before {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000;
-        content: "";
+        background-color: variables.$secondaryTextColor;
+        content: '';
         opacity: .7;
     }
 
@@ -26,7 +28,6 @@
         margin-bottom: 64px;
         font-size: 40px;
         line-height: 56px;
-        color: #fff;
         font-weight: 800;
         text-align: center;
     }
@@ -37,10 +38,10 @@
         display: block;
     }
 
-    @media (max-width:640px) {
-        padding: 40px 0
-        ;
-        &__logo{
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
             height: 40px;
         }
 

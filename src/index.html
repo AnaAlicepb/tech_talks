@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Tech Talks</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-<header class="hero">
-    <div class="container">
-        <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-        <p class="hero__text"> O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s</p>
-    </div>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        17/12/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    O desenvolvimento front-end envolve a criação da parte visual e interativa de websites e aplicativos, usando tecnologias como HTML, CSS e JavaScript. Ferramentas como React, Angular e Vue.js ajudam a construir interfaces de usuário dinâmicas, enquanto frameworks CSS como Bootstrap e Tailwind CSS facilitam o design responsivo. Ferramentas avançadas incluem TypeScript para tipagem estática e bundlers como Webpack e Parcel para otimização de recursos. Conceitos chave no front-end incluem responsividade, acessibilidade, performance e SEO. O campo é dinâmico, com práticas ágeis e testes automatizados sendo essenciais para manter a qualidade e a atualização constante frente às novas tecnologias e tendências.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    O design UI/UX foca na otimização da interação entre usuários e produtos digitais. UI (Interface do Usuário) abrange a parte visual, como layout e elementos interativos, enquanto UX (Experiência do Usuário) trata do design funcional e emocional, visando a satisfação do usuário. Ferramentas como Figma, Sketch e Adobe XD são amplamente usadas para prototipagem e wireframing. Essencialmente, o processo UI/UX envolve pesquisa de usuário, design iterativo e testes de usabilidade para garantir que o produto final seja intuitivo e eficaz. A área está sempre evoluindo, enfatizando a necessidade de abordagens centradas no usuário e designs inclusivos.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Data Science é o campo que combina métodos estatísticos, análise de dados e tecnologia para extrair insights e conhecimentos de dados complexos. Utiliza algoritmos de machine learning, técnicas de mineração de dados e visualização para resolver problemas e prever tendências. Ferramentas populares incluem Python, R, SQL e plataformas como Jupyter Notebook e TensorFlow. O processo envolve coleta, limpeza e análise de dados, além de interpretação e comunicação dos resultados para a tomada de decisões informadas. É uma área em constante evolução, crucial para indústrias que vão desde saúde até finanças, destacando a importância da habilidade analítica e do pensamento crítico.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    O desenvolvimento back-end envolve a construção da lógica e das funcionalidades que operam nos bastidores de aplicativos e sites, gerenciando a troca de dados entre o servidor, o banco de dados e o usuário final. Utiliza linguagens como Python, Java, Ruby, e PHP, além de tecnologias de banco de dados como MySQL, PostgreSQL e MongoDB. Frameworks como Node.js, Django, e Spring são essenciais para agilizar o desenvolvimento. O processo inclui a implementação de APIs, gestão de segurança e dados, e a manutenção de servidores. Com foco em escalabilidade e segurança, o back-end é fundamental para o funcionamento eficiente e seguro de aplicações digitais.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-end">
+        </div>
+    </section>
 
-</header>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
